@@ -1,18 +1,13 @@
 
 # Mold Tutorial Part 1
 Create your program to measure some of the conditions for mold growth. 
-When you turn the micro:bt on, what is happening?``||gatorEnvironment: initialize||`` the environmental sensor
-
-```template
-gatorEnvironment.beginEnvironment()
-```
+When you turn the micro:bt on, what is happening?
 
 ## Step 1
 How will you ``||input:tell the micro:bit||`` to collect data?
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-   
 })
 ```
 
