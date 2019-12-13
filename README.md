@@ -1,24 +1,24 @@
 
 # Mold Tutorial Part 1
-Create your program to measure some of the conditions for mold growth
-
-## Step 1
+Create your program to measure some of the conditions for mold growth. 
 When you turn the micro:bt on, what is happening?``||gatorEnvironment: initialize||`` the environmental sensor
 
 ```template
 gatorEnvironment.beginEnvironment()
 ```
 
-## Step 2
+## Step 1
 How will you ``||input:tell the micro:bit||`` to collect data?
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
    
 })
 ```
 
-## Step 3
+## Step 2
 How many measurements do you need to ``||basic: show||``?
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(0)
@@ -26,8 +26,9 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Step 4
+## Step 3
 What ``||gatorEnvironment: measurements||`` do you want to take?
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(gatorEnvironment.getMeasurement(measurementType.degreesF))
@@ -35,8 +36,9 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Step 5
+## Step 4
 How will you ``||basic: know which measurement||`` you are taking?
+
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showString("T")
@@ -46,7 +48,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Step 6
+## Step 5
 What happens if the value of the data collected is a really long decimal? 
 How could you make ``||Math:the data easier to read?||``?
 
@@ -59,7 +61,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Step 7
+## Step 6
 You need to record your information, so you might want to ``||basic: take a break||``
 in between measurements
 
@@ -74,7 +76,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Step 8
+## Step 7
 ``|Download your code|`` and try it out
 
 
