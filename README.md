@@ -1,7 +1,15 @@
 
 # Mold Tutorial Part 1
 Create your program to measure some of the conditions for mold growth. 
-When you turn the micro:bt on, what is happening?
+
+## Step 0
+When you turn the micro:bit on, ``||gatorEnvironment:initialize||`` the
+environmental sensor
+
+```blocks
+gatorEnvironment.beginEnvironment()
+```
+
 
 ## Step 1
 How will you ``||input:tell the micro:bit||`` to collect data?
@@ -45,7 +53,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Step 5
 What happens if the value of the data collected is a really long decimal? 
-How could you make ``||Math:the data easier to read?||``?
+How could you make ``||math:the data easier to read?||``?
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
